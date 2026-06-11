@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarah Samrin | Developer, Designer, Product Manager & Co-Founder at Aventro Solutions. Defying gravity in digital experiences.">
+    <meta name="keywords" content="Sarah Samrin, Developer, UI/UX Designer, Product Manager, Aventro Solutions, Portfolio, Web Developer, Web Designer">
+    <meta name="author" content="Sarah Samrin">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sarah Samrin - Creative Technologist & Co-Founder">
+    <meta property="og:description" content="Portfolio of Sarah Samrin, crafting digital experiences that defy gravity.">
+    <meta property="og:image" content="sarah_portrait.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Sarah Samrin - Creative Technologist & Co-Founder">
+    <meta property="twitter:description" content="Portfolio of Sarah Samrin, crafting digital experiences that defy gravity.">
+    
+    <title>Sarah Samrin | Defying Gravity in Tech</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Red Particle Background -->
+    <div id="particle-container"></div>
+    <div class="glow-orb" id="orb-1"></div>
+    <div class="glow-orb" id="orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#home" id="brand-logo">
+                <span class="text-white">Sarah</span> <span class="accent-red font-weight-bold">Samrin</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#highlights">Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-sm btn-outline-red font-space text-uppercase px-3 py-2" id="nav-recruiter-toggle">
+                            <i class="fa-solid fa-user-tie me-1"></i> HR Portal
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- Text Content -->
+                <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start hero-text-col">
+                    <h5 class="subtitle-text text-uppercase mb-3 font-space accent-red tracking-wide" data-reveal="fade-down">
+                        Developer &bull; Designer &bull; PM &bull; Co-Founder
+                    </h5>
+                    <h1 class="display-1 fw-bold text-white mb-3 tracking-tight main-heading" data-reveal="fade-right">
+                        SARAH SAMRIN
+                    </h1>
+                    <h2 class="h3 fw-light text-silver mb-4 tagline-container" data-reveal="fade-right" data-reveal-delay="200">
+                        <span id="typing-tagline"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    <p class="lead text-gray mb-5 pe-lg-5" data-reveal="fade-up" data-reveal-delay="400">
+                        Co-Founder of Aventro Solutions. Crafting interactive digital ecosystems that push boundaries and defy gravity.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3" data-reveal="fade-up" data-reveal-delay="600">
+                        <a href="#projects" class="btn btn-red btn-lg px-4 py-3 magnetic-btn text-uppercase font-space" id="btn-view-work">
+                            View Work <i class="fa-solid fa-arrow-right ms-2 transition-arrow"></i>
+                        </a>
+                        <button class="btn btn-outline-red btn-lg px-4 py-3 magnetic-btn text-uppercase font-space" id="hero-recruiter-btn">
+                            <i class="fa-solid fa-briefcase me-2"></i> HR Recruiter Hub
+                        </button>
+                        <a href="#contact" class="btn btn-outline-white btn-lg px-4 py-3 magnetic-btn text-uppercase font-space" id="btn-contact">
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+                <!-- Image Container -->
+                <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0 text-center d-flex justify-content-center hero-img-col" data-reveal="scale-up" data-reveal-delay="300">
+                    <div class="portrait-wrapper">
+                        <div class="portrait-glow"></div>
+                        <img src="sarah_portrait.png" alt="Sarah Samrin Portrait" class="img-fluid portrait-img img-hover-physics" id="sarah-hero-portrait">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+            <span class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-6 position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Visuals/Skills Column -->
+                <div class="col-lg-6 mb-5 mb-lg-0 order-2 order-lg-1 position-relative" data-reveal="fade-right">
+                    <div class="skills-galaxy-container d-flex justify-content-center align-items-center">
+                        <!-- About card image at center -->
+                        <div class="about-card-wrapper img-hover-physics-card position-absolute">
+                            <div class="about-card-glow"></div>
+                            <img src="About.png" alt="Sarah Samrin - Creative Work" class="img-fluid about-img rounded-4">
+                        </div>
+                        
+                        <!-- Skill Orbs (Defying Gravity) -->
+                        <div class="skill-orb gravity-bubble" data-speed="1.2" data-radius="140" data-angle="0">
+                            <i class="fa-brands fa-js accent-red"></i>
+                            <span>JS</span>
+                        </div>
+                        <div class="skill-orb gravity-bubble" data-speed="0.8" data-radius="190" data-angle="72">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <span>BS5</span>
+                        </div>
+                        <div class="skill-orb gravity-bubble" data-speed="1.5" data-radius="150" data-angle="144">
+                            <i class="fa-solid fa-code accent-red"></i>
+                            <span>Dev</span>
+                        </div>
+                        <div class="skill-orb gravity-bubble" data-speed="1.0" data-radius="210" data-angle="216">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="skill-orb gravity-bubble" data-speed="1.1" data-radius="170" data-angle="288">
+                            <i class="fa-solid fa-chart-line accent-red"></i>
+                            <span>PM</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text & Stats Column -->
+                <div class="col-lg-6 order-1 order-lg-2" data-reveal="fade-left">
+                    <h6 class="text-uppercase accent-red font-space fw-bold mb-2">01 / ABOUT ME</h6>
+                    <h2 class="display-5 fw-bold text-white mb-4">Bridging Code, Design, and Strategy.</h2>
+                    <p class="text-gray mb-4">
+                        I am a multidisciplinary creative technologist, Developer, UI/UX Designer, Product Manager, and Co-Founder of Aventro Solutions. I specialize in engineering bespoke solutions that merge functional precision with futuristic aesthetics.
+                    </p>
+                    <p class="text-gray mb-5">
+                        My philosophy is simple: push limitations, question static norms, and craft digital systems that feel light, fast, and defy conventional gravity. Whether heading marketing strategy or architecting front-end solutions, I build with performance and elegance in mind.
+                    </p>
+                    <!-- Stats Section -->
+                    <div class="row g-4 stats-grid">
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-card">
+                                <h3 class="display-6 fw-bold text-white mb-1"><span class="counter" data-target="5">0</span>+</h3>
+                                <p class="text-gray-muted mb-0 font-space text-uppercase small">Years Exp</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-card">
+                                <h3 class="display-6 fw-bold text-white mb-1"><span class="counter" data-target="40">0</span>+</h3>
+                                <p class="text-gray-muted mb-0 font-space text-uppercase small">Projects</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="stat-card">
+                                <h3 class="display-6 fw-bold text-white mb-1"><span class="counter" data-target="25">0</span>+</h3>
+                                <p class="text-gray-muted mb-0 font-space text-uppercase small">Clients</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section py-6 position-relative overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal="fade-up">
+                <h6 class="text-uppercase accent-red font-space fw-bold mb-2">02 / EXPERIENCES</h6>
+                <h2 class="display-5 fw-bold text-white">Milestones & Leadership</h2>
+            </div>
+            
+            <div class="timeline position-relative">
+                <!-- Timeline track line -->
+                <div class="timeline-line"></div>
+                
+                <!-- Experience Card 1 (Aventro Solutions Co-Founder) -->
+                <div class="timeline-item left" data-reveal="fade-right">
+                    <div class="timeline-dot bg-red-glow"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date font-space accent-red">2023 - Present</div>
+                        <h4 class="text-white mt-2">Co-Founder & Product Lead</h4>
+                        <h5 class="text-silver-muted mb-3 h6">Aventro Solutions</h5>
+                        <p class="text-gray">
+                            Co-founded Aventro Solutions. Directing front-end architecture, UI/UX systems, and overall product execution. Championing modern frameworks, responsive design systems, and client delivery pipelines.
+                        </p>
+                        <span class="badge badge-accent">Leadership</span>
+                        <span class="badge badge-accent">Strategy</span>
+                        <span class="badge badge-accent">UI Architecture</span>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 (Aventro Solutions Head of Marketing) -->
+                <div class="timeline-item right" data-reveal="fade-left">
+                    <div class="timeline-dot bg-red-glow"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date font-space accent-red">2023 - Present</div>
+                        <h4 class="text-white mt-2">Head of Marketing & Brand Strategy</h4>
+                        <h5 class="text-silver-muted mb-3 h6">Aventro Solutions</h5>
+                        <p class="text-gray">
+                            Shaping Aventro's digital identity and market outreach. Managing SEO campaigns, content creation, high-conversion landing page layouts, and corporate social media architectures.
+                        </p>
+                        <span class="badge badge-accent">Brand Identity</span>
+                        <span class="badge badge-accent">SEO Strategy</span>
+                        <span class="badge badge-accent">Growth Marketing</span>
+                    </div>
+                </div>
+
+                <!-- Experience Card 3 (Senior Frontend Developer) -->
+                <div class="timeline-item left" data-reveal="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date font-space accent-red">2021 - 2023</div>
+                        <h4 class="text-white mt-2">Lead Frontend Engineer</h4>
+                        <h5 class="text-silver-muted mb-3 h6">Aventro Solutions</h5>
+                        <p class="text-gray">
+                            Architected complex interactive dashboards and user flows. Optimized application page performance by 40% and mentored junior web developers in clean code practices.
+                        </p>
+                        <span class="badge badge-accent">JavaScript</span>
+                        <span class="badge badge-accent">CSS Grid/Flex</span>
+                        <span class="badge badge-accent">Performance Opt</span>
+                    </div>
+                </div>
+
+                <!-- Experience Card 4 (Product Designer) -->
+                <div class="timeline-item right" data-reveal="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date font-space accent-red">2019 - 2021</div>
+                        <h4 class="text-white mt-2">UI/UX Product Designer</h4>
+                        <h5 class="text-silver-muted mb-3 h6">Aventro Solutions</h5>
+                        <p class="text-gray">
+                            Crafted high-fidelity wireframes, interactive user testing modules, and responsive CSS frameworks. Oversaw customer journey mapping and interactive interface transitions.
+                        </p>
+                        <span class="badge badge-accent">Wireframing</span>
+                        <span class="badge badge-accent">Figma to HTML</span>
+                        <span class="badge badge-accent">User Research</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-6 position-relative bg-darker">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5" data-reveal="fade-up">
+                <div>
+                    <h6 class="text-uppercase accent-red font-space fw-bold mb-2">03 / CREATIONS</h6>
+                    <h2 class="display-5 fw-bold text-white mb-0">Featured Portfolios</h2>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="filter-wrapper mt-4 mt-md-0">
+                    <div class="filter-buttons d-flex flex-wrap gap-2">
+                        <button class="btn btn-filter active font-space text-uppercase" data-filter="all">All</button>
+                        <button class="btn btn-filter font-space text-uppercase" data-filter="development">Development</button>
+                        <button class="btn btn-filter font-space text-uppercase" data-filter="design">Design</button>
+                        <button class="btn btn-filter font-space text-uppercase" data-filter="product">Product</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4 project-grid">
+                <!-- Project 1: AdamCaterings (Development, Product) -->
+                <div class="col-md-6 col-lg-4 project-item-wrapper" data-category="development,product" data-reveal="zoom-in">
+                    <div class="project-card img-hover-physics-card">
+                        <div class="project-img-wrapper">
+                            <img src="project_saas.png" alt="AdamCaterings" class="img-fluid project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content text-center">
+                                    <h4 class="text-white mb-2 font-space">AdamCaterings</h4>
+                                    <p class="small text-silver mb-3">Catering Service Portal</p>
+                                    <a href="https://www.adamcatering.in/" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm text-uppercase font-space repel-btn">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Enmett (Development, Design) -->
+                <div class="col-md-6 col-lg-4 project-item-wrapper" data-category="development,design" data-reveal="zoom-in" data-reveal-delay="100">
+                    <div class="project-card img-hover-physics-card">
+                        <div class="project-img-wrapper">
+                            <img src="project_ai.png" alt="Enmett" class="img-fluid project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content text-center">
+                                    <h4 class="text-white mb-2 font-space">Enmett</h4>
+                                    <p class="small text-silver mb-3">Digital Platform</p>
+                                    <a href="https://www.enmett.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm text-uppercase font-space repel-btn">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Apex Tracker (Design, Product) -->
+                <div class="col-md-6 col-lg-4 project-item-wrapper" data-category="design,product" data-reveal="zoom-in" data-reveal-delay="200">
+                    <div class="project-card img-hover-physics-card">
+                        <div class="project-img-wrapper">
+                            <img src="project_mobile.png" alt="Apex Tracker" class="img-fluid project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content text-center">
+                                    <h4 class="text-white mb-2 font-space">Apex Tracker</h4>
+                                    <p class="small text-silver mb-3">Mobile Fitness App</p>
+                                    <a href="https://drip-it-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm text-uppercase font-space repel-btn">Visit Site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="highlights-section py-6 position-relative">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5" data-reveal="fade-up">
+                <div>
+                    <h6 class="text-uppercase accent-red font-space fw-bold mb-2">04 / SUMMITS & HIGHLIGHTS</h6>
+                    <h2 class="display-5 fw-bold text-white mb-0">Speaking & Summits</h2>
+                </div>
+            </div>
+            
+            <div class="row g-4 highlight-grid">
+                <!-- Highlight 1: Video -->
+                <div class="col-md-6 col-lg-6 highlight-item-wrapper" data-reveal="zoom-in">
+                    <div class="highlight-card img-hover-physics-card h-100">
+                        <div class="highlight-media-wrapper position-relative overflow-hidden rounded-4">
+                            <video preload="metadata" class="w-100 highlight-video" style="aspect-ratio: 16/9; object-fit: cover;">
+                                <source src="WhatsApp Video 2026-06-11 at 2.04.58 PM.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="media-lightbox-trigger position-absolute w-100 h-100 top-0 start-0 z-2 d-flex align-items-center justify-content-center" data-media-type="video" data-media-src="WhatsApp Video 2026-06-11 at 2.04.58 PM.mp4" data-media-title="Summit Presentation Reel" data-media-desc="Direct presentation highlights from the stage, showcasing product leadership and digital innovation at key trade events." data-media-badge="Summit Video">
+                                <div class="lightbox-hover-icon">
+                                    <i class="fa-solid fa-play display-4 text-white"></i>
+                                </div>
+                            </div>
+                            <span class="badge badge-accent position-absolute z-3 font-space text-uppercase" style="top: 15px; left: 15px;">Summit Video</span>
+                        </div>
+                        <div class="highlight-info p-4">
+                            <h4 class="text-white font-space mt-2">Summit Presentation Reel</h4>
+                            <p class="text-gray mb-0">
+                                Direct presentation highlights from the stage, showcasing product leadership and digital innovation at key trade events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlight 2: pic1.png -->
+                <div class="col-md-6 col-lg-6 highlight-item-wrapper" data-reveal="zoom-in" data-reveal-delay="100">
+                    <div class="highlight-card img-hover-physics-card h-100">
+                        <div class="highlight-media-wrapper position-relative overflow-hidden rounded-4">
+                            <img src="pic1.png" alt="Sarah Samrin Speaking at SRMIST" class="img-fluid w-100 highlight-img" style="aspect-ratio: 16/9; object-fit: cover; object-position: center 20%;">
+                            <div class="media-lightbox-trigger position-absolute w-100 h-100 top-0 start-0 z-2 d-flex align-items-center justify-content-center" data-media-type="image" data-media-src="pic1.png" data-media-title="Keynote at SRMIST (DNS Event)" data-media-desc="Sharing insights on UI/UX product engineering and co-founding challenges with developers, students, and future builders." data-media-badge="Speaking Event">
+                                <div class="lightbox-hover-icon">
+                                    <i class="fa-solid fa-expand display-4 text-white"></i>
+                                </div>
+                            </div>
+                            <span class="badge badge-accent position-absolute z-3 font-space text-uppercase" style="top: 15px; left: 15px;">Speaking Event</span>
+                        </div>
+                        <div class="highlight-info p-4">
+                            <h4 class="text-white font-space mt-2">Keynote at SRMIST (DNS Event)</h4>
+                            <p class="text-gray mb-0">
+                                Sharing insights on UI/UX product engineering and co-founding challenges with developers, students, and future builders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlight 3: Pic2.png -->
+                <div class="col-md-6 col-lg-6 highlight-item-wrapper" data-reveal="zoom-in" data-reveal-delay="200">
+                    <div class="highlight-card img-hover-physics-card h-100">
+                        <div class="highlight-media-wrapper position-relative overflow-hidden rounded-4">
+                            <img src="Pic2.png" alt="UEF Trade Summit 2025" class="img-fluid w-100 highlight-img" style="aspect-ratio: 16/9; object-fit: cover;">
+                            <div class="media-lightbox-trigger position-absolute w-100 h-100 top-0 start-0 z-2 d-flex align-items-center justify-content-center" data-media-type="image" data-media-src="Pic2.png" data-media-title="UEF Trade Summit 2025" data-media-desc="Co-founder presence representing Aventro Solutions at the United Economic Forum (UEF) at Chennai Trade Centre." data-media-badge="Trade Summit">
+                                <div class="lightbox-hover-icon">
+                                    <i class="fa-solid fa-expand display-4 text-white"></i>
+                                </div>
+                            </div>
+                            <span class="badge badge-accent position-absolute z-3 font-space text-uppercase" style="top: 15px; left: 15px;">Trade Summit</span>
+                        </div>
+                        <div class="highlight-info p-4">
+                            <h4 class="text-white font-space mt-2">UEF Trade Summit 2025</h4>
+                            <p class="text-gray mb-0">
+                                Co-founder presence representing Aventro Solutions at the United Economic Forum (UEF) at Chennai Trade Centre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlight 4: pic3.png -->
+                <div class="col-md-6 col-lg-6 highlight-item-wrapper" data-reveal="zoom-in" data-reveal-delay="300">
+                    <div class="highlight-card img-hover-physics-card h-100">
+                        <div class="highlight-media-wrapper position-relative overflow-hidden rounded-4">
+                            <img src="pic3.png" alt="Leadership Networking" class="img-fluid w-100 highlight-img" style="aspect-ratio: 16/9; object-fit: cover; object-position: center 30%;">
+                            <div class="media-lightbox-trigger position-absolute w-100 h-100 top-0 start-0 z-2 d-flex align-items-center justify-content-center" data-media-type="image" data-media-src="pic3.png" data-media-title="Industry Networking" data-media-desc="Collaborating with delegates, engineers, and product leaders to build the future of immersive web platforms." data-media-badge="Team & Networking">
+                                <div class="lightbox-hover-icon">
+                                    <i class="fa-solid fa-expand display-4 text-white"></i>
+                                </div>
+                            </div>
+                            <span class="badge badge-accent position-absolute z-3 font-space text-uppercase" style="top: 15px; left: 15px;">Team & Networking</span>
+                        </div>
+                        <div class="highlight-info p-4">
+                            <h4 class="text-white font-space mt-2">Industry Networking</h4>
+                            <p class="text-gray mb-0">
+                                Collaborating with delegates, engineers, and product leaders to build the future of immersive web platforms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-6 position-relative overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal="fade-up">
+                <h6 class="text-uppercase accent-red font-space fw-bold mb-2">05 / ENDORSEMENTS</h6>
+                <h2 class="display-5 fw-bold text-white">What Clients & Partners Say</h2>
+            </div>
+            
+            <div class="row justify-content-center" data-reveal="fade-up" data-reveal-delay="200">
+                <div class="col-lg-8">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Testimonial 1 -->
+                            <div class="carousel-item active">
+                                <div class="testimonial-card text-center px-4 py-5">
+                                    <div class="quote-icon mb-4"><i class="fa-solid fa-quote-left accent-red display-4"></i></div>
+                                    <p class="lead text-gray mb-4">
+                                        "Sarah is an exceptional talent. As a Co-Founder at Aventro Solutions, her unique mix of engineering excellence and strategic product mindset was crucial in driving our project launches ahead of schedule. Highly creative and relentless."
+                                    </p>
+                                    <h5 class="text-white font-space mb-1">Arman Kabir</h5>
+                                    <p class="text-gray-muted small text-uppercase mb-0">Co-Founder, Aventro Solutions</p>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center px-4 py-5">
+                                    <div class="quote-icon mb-4"><i class="fa-solid fa-quote-left accent-red display-4"></i></div>
+                                    <p class="lead text-gray mb-4">
+                                        "Working with Sarah was a game-changer. She transformed our fragmented mobile fitness app vision into a beautifully sleek design system, building the responsive HTML/CSS codebase from the ground up. True professionalism."
+                                    </p>
+                                    <h5 class="text-white font-space mb-1">Jessica Vance</h5>
+                                    <p class="text-gray-muted small text-uppercase mb-0">Director of UX, Apex Labs</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators-custom d-flex justify-content-center gap-2 mt-4">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-6 position-relative bg-darker">
+        <!-- Background Video -->
+        <video autoplay loop muted playsinline class="contact-bg-video">
+            <source src="Video.mp4" type="video/mp4">
+        </video>
+        <div class="contact-video-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <!-- Contact info -->
+                <div class="col-lg-5 mb-5 mb-lg-0" data-reveal="fade-right">
+                    <h6 class="text-uppercase accent-red font-space fw-bold mb-2">06 / ENGAGE</h6>
+                    <h2 class="display-4 fw-bold text-white mb-3 tracking-tight">Let's create something extraordinary.</h2>
+                    <p class="text-silver-muted font-space small mb-4 tracking-wide text-uppercase">System Interface for Project Inquiries</p>
+                    <p class="text-gray mb-5">
+                        Have a project in mind, want to partner, or just chat about tech strategies? Send a message and let's defy static limits together. Your transmission will be dispatched directly to my terminal.
+                    </p>
+                    
+                    <div class="contact-methods mb-5">
+                        <div class="d-flex align-items-center mb-4 contact-method-item">
+                            <div class="contact-icon bg-red-glow"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="ms-3">
+                                <p class="text-gray-muted mb-0 small text-uppercase font-space">Direct Terminal Link</p>
+                                <a href="mailto:sarahsamrin05@gmail.com" class="text-white text-decoration-none hover-red fw-bold">sarahsamrin05@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center contact-method-item">
+                            <div class="contact-icon bg-red-glow"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="ms-3">
+                                <p class="text-gray-muted mb-0 small text-uppercase font-space">Location Node</p>
+                                <p class="text-white mb-0 fw-bold">Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social icons -->
+                    <div class="d-flex gap-3 social-links-wrapper">
+                        <a href="https://www.linkedin.com/in/sarah-samrin-232780306?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-btn magnetic-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/sarah_samrin?igsh=MW9idjJnbnlyaXBmbg==" target="_blank" class="social-btn magnetic-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <div class="col-lg-6" data-reveal="fade-left">
+                    <div class="form-container position-relative overflow-hidden">
+                        <!-- Red accent strip -->
+                        <div class="form-accent-strip"></div>
+                        
+                        <div class="form-status-panel font-space mb-4 d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <span class="status-dot-pulse me-2"></span>
+                                <span class="text-white small text-uppercase" id="form-status-text">System Active &bull; Ready</span>
+                            </div>
+                            <span class="text-white small text-uppercase">v1.0.4</span>
+                        </div>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <!-- Service Selectors -->
+                                <div class="col-12 mb-3">
+                                    <p class="text-white mb-2 small text-uppercase font-space">Select Project Requirements</p>
+                                    <div class="d-flex flex-wrap gap-2 service-selector">
+                                        <input type="checkbox" class="btn-check-custom d-none" id="service-dev" name="services" value="Development">
+                                        <label class="btn-outline-custom-pill font-space" for="service-dev">Development</label>
+                                        
+                                        <input type="checkbox" class="btn-check-custom d-none" id="service-design" name="services" value="Design">
+                                        <label class="btn-outline-custom-pill font-space" for="service-design">Design</label>
+                                        
+                                        <input type="checkbox" class="btn-check-custom d-none" id="service-pm" name="services" value="Product">
+                                        <label class="btn-outline-custom-pill font-space" for="service-pm">Product Strategy</label>
+                                        
+                                        <input type="checkbox" class="btn-check-custom d-none" id="service-mktg" name="services" value="Marketing">
+                                        <label class="btn-outline-custom-pill font-space" for="service-mktg">Marketing</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                        <input type="text" class="form-control-custom" id="form-name" name="name" required placeholder=" ">
+                                        <label for="form-name" class="label-custom">Your Name</label>
+                                        <div class="invalid-feedback-custom">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                        <input type="email" class="form-control-custom" id="form-email" name="email" required placeholder=" ">
+                                        <label for="form-email" class="label-custom">Your Email</label>
+                                        <div class="invalid-feedback-custom">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group position-relative">
+                                        <input type="text" class="form-control-custom" id="form-subject" name="subject" required placeholder=" ">
+                                        <label for="form-subject" class="label-custom">Subject</label>
+                                        <div class="invalid-feedback-custom">Please write a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group position-relative">
+                                        <textarea class="form-control-custom" id="form-message" name="message" rows="4" required placeholder=" "></textarea>
+                                        <label for="form-message" class="label-custom">Your Message</label>
+                                        <div class="invalid-feedback-custom">Please enter your message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4 text-end">
+                                    <button type="submit" class="btn btn-red btn-lg w-100 py-3 text-uppercase font-space magnetic-btn" id="btn-submit">
+                                        Launch Transmission <i class="fa-solid fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="form-success-msg" class="text-success mt-3 font-space text-center d-none">
+                            <i class="fa-solid fa-circle-check me-2"></i> System response: Message launched successfully!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 position-relative border-top-dark">
+        <div class="container text-center">
+            <p class="text-gray-muted mb-0 small font-space">
+                &copy; 2026 Sarah Samrin. All rights reserved. Crafting experiences that defy gravity.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Immersive Media Lightbox Modal -->
+    <div id="mediaLightbox" class="media-lightbox-overlay" aria-hidden="true">
+        <div class="lightbox-backdrop"></div>
+        <button class="lightbox-close-btn" aria-label="Close Lightbox"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav-btn prev-btn" aria-label="Previous Media"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-nav-btn next-btn" aria-label="Next Media"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <div class="lightbox-container">
+            <div class="lightbox-media-box">
+                <!-- Media dynamically inserted by JS here (img or video) -->
+            </div>
+            <div class="lightbox-info-box font-space">
+                <span class="lightbox-badge badge badge-accent text-uppercase mb-2"></span>
+                <h3 class="lightbox-title text-white mb-2"></h3>
+                <p class="lightbox-desc text-gray mb-0"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recruiter Hub Slide-out Dashboard -->
+    <div id="recruiterHub" class="recruiter-hub-overlay" aria-hidden="true">
+        <div class="recruiter-hub-backdrop"></div>
+        <div class="recruiter-hub-panel">
+            <!-- Header -->
+            <div class="hub-header d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center">
+                    <span class="hub-status-dot"></span>
+                    <h3 class="hub-title font-space text-uppercase text-white mb-0 ms-2">Recruiter Hub</h3>
+                </div>
+                <button class="hub-close-btn" aria-label="Close Recruiter Hub"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <!-- Recruiter Body -->
+            <div class="hub-body">
+                <!-- Bio Card -->
+                <div class="hub-card bio-card mb-4">
+                    <div class="hub-avatar-row d-flex align-items-center mb-3">
+                        <img src="sarah_portrait.png" alt="Sarah Samrin Portrait" class="hub-avatar img-fluid">
+                        <div class="ms-3">
+                            <h4 class="text-white font-space mb-0">Sarah Samrin</h4>
+                            <p class="accent-red font-space small mb-0 text-uppercase tracking-wide">Developer &amp; Product Leader</p>
+                        </div>
+                    </div>
+                    <p class="small text-silver mb-0">
+                        A results-driven Co-Founder, UX Architect, and Lead Frontend Developer specializing in engineering performant, modern digital experiences and heading brand marketing strategies.
+                    </p>
+                </div>
+
+                <!-- CV Actions -->
+                <div class="hub-card actions-card mb-4 text-center">
+                    <h5 class="text-white font-space mb-3 text-start"><i class="fa-solid fa-file-invoice-dollar accent-red me-2"></i>Credentials</h5>
+                    <div class="d-grid gap-2">
+                        <a href="resume_placeholder.pdf" download="Sarah_Samrin_Resume.pdf" class="btn btn-red w-100 py-3 font-space text-uppercase" id="btn-download-resume">
+                            <i class="fa-solid fa-file-arrow-down me-2 animate-bounce"></i> Download CV (PDF)
+                        </a>
+                        <a href="mailto:sarahsamrin05@gmail.com?subject=Recruiting Inquiry - Sarah Samrin&body=Hello Sarah,%0D%0A%0D%0AI viewed your portfolio and would love to schedule a screening call with you." class="btn btn-outline-white w-100 py-2 font-space text-uppercase text-center">
+                            <i class="fa-solid fa-envelope me-2"></i> Request Interview
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recruiting Stats -->
+                <div class="hub-card stats-card mb-4">
+                    <h5 class="text-white font-space mb-3"><i class="fa-solid fa-gauge-high accent-red me-2"></i>Key Impact Metrics</h5>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="hub-stat-item">
+                                <h6 class="accent-red font-space mb-0">+40%</h6>
+                                <p class="small text-gray mb-0">Page Load speedups</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hub-stat-item">
+                                <h6 class="accent-red font-space mb-0">40+</h6>
+                                <p class="small text-gray mb-0">Successful launches</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hub-stat-item">
+                                <h6 class="accent-red font-space mb-0">5+ Yrs</h6>
+                                <p class="small text-gray mb-0">Cross-domain exp</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hub-stat-item">
+                                <h6 class="accent-red font-space mb-0">0 to 1</h6>
+                                <p class="small text-gray mb-0">Co-founder launch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strengths / Core Competencies -->
+                <div class="hub-card skills-card mb-4">
+                    <h5 class="text-white font-space mb-3"><i class="fa-solid fa-cubes accent-red me-2"></i>Core Competencies</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge badge-accent m-1"><i class="fa-solid fa-code me-1"></i> Frontend Architecture</span>
+                        <span class="badge badge-accent m-1"><i class="fa-solid fa-window-maximize me-1"></i> UI/UX Design Systems</span>
+                        <span class="badge badge-accent m-1"><i class="fa-solid fa-bullseye me-1"></i> Product Leadership</span>
+                        <span class="badge badge-accent m-1"><i class="fa-solid fa-magnifying-glass-chart me-1"></i> Growth Marketing &amp; SEO</span>
+                        <span class="badge badge-accent m-1"><i class="fa-solid fa-users me-1"></i> Team Mentorship</span>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications -->
+                <div class="hub-card edu-card mb-4">
+                    <h5 class="text-white font-space mb-3"><i class="fa-solid fa-graduation-cap accent-red me-2"></i>Education &amp; Credentials</h5>
+                    <div class="edu-item mb-3 border-left-red ps-3">
+                        <h6 class="text-white font-space mb-0 small">B.Tech - Information Technology / CSE</h6>
+                        <p class="small text-gray-muted mb-0">SRMIST Chennai (DNS Event Keynote Presenter)</p>
+                    </div>
+                    <div class="edu-item border-left-red ps-3">
+                        <h6 class="text-white font-space mb-0 small">Executive Leadership</h6>
+                        <p class="small text-gray-muted mb-0">Aventro Co-Founder Network &amp; UEF Trade Summit Speaker</p>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Node -->
+                <div class="hub-card contact-card text-center py-3">
+                    <p class="small text-gray-muted mb-2 font-space">Node Coordinates: Chennai, India</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://www.linkedin.com/in/sarah-samrin-232780306?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:sarahsamrin05@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+919876543210" class="social-btn" aria-label="Call Direct"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
